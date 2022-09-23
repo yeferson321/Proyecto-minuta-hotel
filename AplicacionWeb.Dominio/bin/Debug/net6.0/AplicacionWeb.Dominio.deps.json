@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "AplicacionWeb.Dominio/1.0.0": {
+        "runtime": {
+          "AplicacionWeb.Dominio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AplicacionWeb.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
