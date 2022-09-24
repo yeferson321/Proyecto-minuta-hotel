@@ -1,0 +1,38 @@
+﻿@page
+@model Minuta.App.ListaResidentesModel
+@{
+}
+<h1>Residentes</h1>
+
+
+<table class="table">
+    @foreach (var item in Model.residentes)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Documento</td>
+            <td>@item.Nombre</td>
+            <td>@item.Apellido</td>
+            <td>@item.NumeroTelefono</td>
+            <td>@item.Apartamento</td>
+            <td>
+                <a asp-page="./DetalleResidentes" class="btn btn-outline-info table-btn" asp-route-ResidenteID="@item.Id">
+                <i class="bi bi-info-circle"></i>
+                Detalle
+            </a>
+            <a asp-page="./EditarResidentes" class="btn btn-outline-warning table-btn" asp-route-ResidenteID="@item.Id">
+                <i class="bi bi-pen-fill"></i>
+                Editar
+            </a>
+            <a asp-page="./EliminarResidentes" class="btn btn-outline-danger" asp-route-ResidenteID="@item.Id">
+                <i class="bi bi-trash2-fill"></i>               
+                Eliminar
+            </a>
+        </td>
+        </tr>
+    }
+</table>
+<a asp-page="./AgregarResidentes" class="btn btn-success table-btn">
+    <i class="bi bi-person-plus"></i>
+    Agregar Residente
+</a>

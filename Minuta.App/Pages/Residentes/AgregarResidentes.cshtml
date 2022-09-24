@@ -1,0 +1,35 @@
+﻿@page
+@model Minuta.App.AgregarResidentesModel
+@{
+}
+<h1>Agregar un nuevo Residente</h1>
+<form method="post">
+    <input type="hidden" asp-for="residenteDetalle.Id">
+    <div class="form-group">
+        <label asp-for="residenteDetalle.Nombre"></label>
+        <input asp-for="residenteDetalle.Nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="residenteDetalle.Nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="residenteDetalle.Apellido"></label>
+        <input asp-for="residenteDetalle.Apellido" class="form-control">
+        <span class="text-danger" asp-validation-for="residenteDetalle.Apellido"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="residenteDetalle.NumeroTelefono"></label>
+        <input asp-for="residenteDetalle.NumeroTelefono" class="form-control">
+        <span class="text-danger" asp-validation-for="residenteDetalle.NumeroTelefono"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="residenteDetalle.Apartamento"></label>
+        <input asp-for="residenteDetalle.Apartamento" class="form-control">
+        <span class="text-danger" asp-validation-for="residenteDetalle.Apartamento"></span>
+    </div>
+    <button type="submit"class="btn btn-outline-success table-btn">
+        <i class="bi bi-person-plus-fill"></i>
+        Grabar Datos
+    </button>
+</form>
+<a asp-page="./ListaResidentes" class="btn btn-primary table-btn">
+    Menu Principal
+</a>

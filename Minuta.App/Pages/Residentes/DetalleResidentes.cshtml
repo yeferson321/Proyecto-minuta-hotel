@@ -1,0 +1,21 @@
+﻿@page
+@model Minuta.App.DetalleResidentesModel
+@{
+}
+<h1>Informacion detallada de: @Model.residenteDetalle.Nombre</h1>
+<div>
+    Apellido del residente: @Model.residenteDetalle.Apellido
+</div>
+<div>
+    Numero telefonico del residente: @Model.residenteDetalle.NumeroTelefono
+</div>
+<div>
+    Documento del residente: @Model.residenteDetalle.Documento
+</div>
+<div>
+    Apartamento del residente: @Model.residenteDetalle.Apartamento
+</div>
+<a asp-page="./ListaResidentes" class="btn btn-primary table-btn">
+    <i class="fas fa-info-circle"></i>
+    Menu Principal
+</a>
